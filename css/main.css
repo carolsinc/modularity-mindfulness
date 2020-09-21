@@ -73,6 +73,7 @@ p > i {
 .garden {
   grid-row: 3;
   grid-column: 1 / -1;
+  padding-top: 1rem;
 }
 
 nav {
@@ -142,20 +143,30 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr 2fr;
+    margin-bottom: .5rem;
   }
 
   .logo {
     grid-column: 1;
+    justify-content: flex-start;
   }
 
   nav {
+    display: grid;
     grid-row: 1;
     grid-column: 3;
-    align-items: center;
+    align-content: center;
   }
 
   .garden {
     grid-row: 2;
+    padding-bottom: .5rem;
+  }
+
+  section {
+    padding: .5em 1em 1em;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
   }
 
   article {
@@ -164,23 +175,30 @@ footer p {
     grid-template-rows: 1fr;
   }
 
-  .viewing {
-    display: grid;
-    grid-column: 1;
+  figure {
+    margin: .5rem;
+    padding-top: 1rem;
   }
 
-  .gravel {
-    display: grid;
-    grid-column: 2;
-  }
-
-  .symbolism {
-    display: inline-grid;
-    grid-column: 3;
+  p {
+    margin-bottom: 3rem;
   }
 
   .btn {
     display: block;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  section {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
 }
